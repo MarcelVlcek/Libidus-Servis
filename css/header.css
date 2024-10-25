@@ -48,10 +48,10 @@ header {
     cursor: pointer;
 }
 
-/* Média queries pre malé obrazovky */
+
 @media (max-width: 768px) {
     .main-nav {
-        display: none; /* Skryje menu na malých obrazovkách */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -64,10 +64,10 @@ header {
     }
 
     .main-nav.show {
-        display: flex; /* Zobrazí menu pri kliknutí */
+        display: flex; 
     }
 
     .menu-btn {
-        display: block; /* Zobrazí hamburger tlačidlo */
+        display: block; 
     }
 }

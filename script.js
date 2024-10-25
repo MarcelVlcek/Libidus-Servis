@@ -1,15 +1,15 @@
 const sections = document.querySelectorAll('.section');
 
 window.addEventListener('scroll', checkSections);
-checkSections(); // Pre zobrazenie sekcií, ktoré sú už viditeľné na stránke
+checkSections(); 
 
 function checkSections() {
-    const triggerBottom = window.innerHeight / 5 * 4; // Spodná hranica triggeru
+    const triggerBottom = window.innerHeight / 5 * 4; 
 
     sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top; // Pozícia sekcie
+        const sectionTop = section.getBoundingClientRect().top; 
 
-        // Ak je sekcia nad triggerom, pridaj triedu 'show'
+       
         if(sectionTop < triggerBottom) {
             section.classList.add('show');
         } else {
@@ -24,14 +24,14 @@ function checkSections() {
 
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(event) {
-        event.preventDefault(); // Zamedzí štandardnému chovaniu odkazu
+        event.preventDefault(); 
 
-        // Zistí cieľovú sekciu podľa "href" atribútu odkazu
+        
         const targetId = this.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
 
-        // Posun na cieľovú sekciu
-        const headerOffset = 80; // Nastav túto hodnotu podľa potreby
+        
+        const headerOffset = 80; 
         const elementPosition = targetSection.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -61,14 +61,14 @@ window.addEventListener("scroll", function () {
 
 function toggleMenu() {
     let nav = document.querySelector('.main-nav ul');
-    nav.classList.toggle('show'); // Prepína triedu "show"
+    nav.classList.toggle('show'); 
 }
 
-// Vyberieme tlačidlo menu a navigačné menu
+
 const menuButton = document.querySelector('.menu-btn');
 const mainNav = document.querySelector('.main-nav');
 
-// Funkcia pre zobrazenie/skrytie menu pri kliknutí na tlačidlo
+
 menuButton.addEventListener('click', () => {
-    mainNav.classList.toggle('show'); // Prepne triedu "show" na menu
+    mainNav.classList.toggle('show'); 
 });
