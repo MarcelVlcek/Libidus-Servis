@@ -1,0 +1,206 @@
+.about {
+    height: 600px;
+    color: rgb(136, 135, 135);
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Skrýva prečnievajúce časti obsahu */
+}
+
+.about h2 {
+    font-family: "Black Ops One", system-ui;
+    margin: 5px 0 0;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 70px;
+}
+
+.left {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image {
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+    border: 10px solid #ffffff;
+    border-radius: 25px;
+}
+
+.right {
+    width: 40%;
+    padding: 20px; /* Pridané padding pre vycentrovanie */
+    display: flex; /* Aktivuje Flexbox */
+    justify-content: center; /* Vycentruje položky na stred */
+    flex-direction: column; /* Umožní vertikálne zarovnanie */
+    align-items: center; /* Vycentruje položky na stred */
+}
+
+.right h2 {
+    margin-bottom: 20px; /* Medzera pod nadpisom */
+}
+
+.services-list {
+    display: flex; /* Aktivuje Flexbox */
+    flex-wrap: wrap; /* Umožní zlomiť položky na nový riadok */
+    justify-content: center; /* Umiestni položky na stred */
+    padding: 0; /* Odstráni predvolené odsadenie */
+    list-style-type: none; /* Odstráni bodky zo zoznamu */
+}
+
+.services-list li {
+    flex: 1 1 calc(40% - 20px); /* Zmenšená šírka na 40% */
+    margin: 10px; /* Pridá medzeru medzi položkami */
+    background-color: #f8f8f8; /* Svetlé pozadie pre každú položku */
+    border-radius: 5px; /* Zaoblené rohy */
+    padding: 15px; /* Vnútorné odsadenie pre text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Jemný tieň pre položky */
+    transition: transform 0.3s, box-shadow 0.3s; /* Pridá hladký prechod */
+    max-width: 220px; /* Nastaví maximálnu šírku */
+    height: 30px;
+    text-align: center; /* Text je vycentrovaný */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efekt pri prechode myšou */
+.services-list li:hover {
+    transform: translateY(-5px); /* Posunie položku o 5px hore */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Zvýši tieň */
+    background-color: rgb(147,101,115);
+    color: #ffffff;
+}
+
+.section.cards h2 {
+    color: black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    background-color: #333;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.price-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(172, 16, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+    height: max-content;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-form label {
+    text-align: center; /* Vycentrovaný text */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-bottom: 2px solid #000;
+}
+
+.contact-form select {
+    width: 60%;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgb(172, 16, 115);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.contact-form button:hover {
+    background-color: rgb(137, 14, 92);
+}

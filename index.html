@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Kablammo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Kablammo&display=swap" rel="stylesheet">
+    <script defer src="/script.js" ></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Libidus_Servis</title>
+</head>
+<body>
+    <header id="top" >
+        <div class="header-container">
+            <h1 class="company-heading"> Libidus servis </h1>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="main-nav">
+                <li><a href="#uvod" class="nav-link">Úvod</a></li>
+                <li><a href="#sluzby" class="nav-link">Služby a cenník</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>  
+            </ul>
+        </div>
+    </header>
+    
+
+
+    <main>
+        <div id="uvod" class="section about">
+            <aside class="left">
+                 <img src="/img/computercase.jpg" alt="background" class="bg-image" >               
+            </aside>
+            <article class="right">
+                <h2>Servis a oprava elektronických zariadení</h2>
+                    <ul class="services-list">
+                        <li>Oprava a údržba počítačov a notebookov</li>
+                        <li>Výmena komponentov</li>
+                        <li>Riešenie problémov so softvérom</li>
+                        <li>Optimalizácia výkonu</li>
+                        <li>Servis mobilných telefónov</li>
+                    </ul>
+            </article>
+        </div>
+        <div id="sluzby" class="section cards">
+            <h2>Služby a cenník</h2>
+                <div class="cards-container">
+                <div class="card">
+                    <h3>KONZULTÁCIA</h3>
+                    <div class="price-circle">
+                        0€ 
+                    </div>
+                    <p>Zadarmenko to bude prosim pekne</p>
+                </div>
+
+                <div class="card">
+                    <h3>ZÁKLADNÝ SERVIS</h3>
+                    <div class="price-circle">
+                        15€ 
+                    </div>
+                    <p>
+                        Diagnostika<br>
+                        Čistenie disku<br>
+                        Kontrola na zavírenie<br>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>POKROČILÝ SERVIS</h3>
+                    <div class="price-circle">
+                        35€ 
+                    </div>
+                    <p>
+                        Diagnostika<br>
+                        Čistenie disku<br>
+                        Kontrola na zavírenie<br>
+                        Kontrola hardware<br>
+                        Výmena komponentov<br>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>KOMPLETNÝ SERVIS</h3>
+                    <div class="price-circle">
+                        50€ 
+                    </div>
+                    <p>
+                        Diagnostika<br>
+                        Čistenie disku<br>
+                        Kontrola na zavírenie<br>
+                        Kontrola hardware<br>
+                        Výmena komponentov<br>
+                         Čistenie zariadenia
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div id="kontakt" class="section">
+            <form class="contact-form"
+                action="https://formspree.io/f/xayrvdbv"
+                method="POST"
+                >
+                <label>
+                    Meno:
+                    <input type="text" name="first-name">
+                </label>
+
+                <label>
+                    E-mail:
+                    <input type="email" name="email">
+                </label>
+
+
+
+                    <select id="select-option" name="option">
+                        <option value="" disabled selected>Vyber možnosť</option>
+                        <option value="Konzultácia">Konzultácia</option>
+                        <option value="Základný servi">Základný servis</option>
+                        <option value="Pokročilý servis">Pokročilý servis</option>
+                        <option value="Kompletný servis">Kompletný servis</option>
+                    </select>
+
+                <label>
+                    Správa:
+                    <textarea name="message"></textarea>
+                </label>
+                
+                <button type="submit">Odoslať</button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="contact-info">
+            <div class="phone"> 
+                <a href="tel:+421123456789">
+                    <i class="fa-solid fa-phone"></i>+421 948384648 
+                </a>
+            </div>
+
+            <div class="email">
+                <a href="mailto:example@example.com">
+                    <i class="fa-solid fa-envelope"></i>lipos96@gmail.com
+                </a>
+            </div>
+            
+            <div class="adress"><i class="fa-solid fa-location-dot"></i>
+                <p>Kováčska 17, 04425 Medzev</p>
+            </div>
+        </div>
+
+        <a href="#top" class="top-page">Hore</a>
+
+    </footer>
+
+</body>
+</html>
