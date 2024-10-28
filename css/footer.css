@@ -64,3 +64,32 @@ footer p{
 .top-page:hover {
    background-color: rgb(136, 14, 91); 
 }
+
+
+
+
+/*..............MEDIA-QUERIES--------*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+   .contact-info a, p{
+     font-size: 14px;
+   }
+   
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  
+   }
+   
+ 
+
+
+ 
+
+@media (min-width: 576px) and (max-width: 767px) { 
+}
+
+
+
+@media (max-width: 575px) { 
+  
+ }

@@ -10,7 +10,7 @@ header {
 .header-container {
     width: 90%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -39,35 +39,60 @@ header {
     transition: 0.4s ease;
 }
 
-.menu-btn {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: rgb(153, 153, 153);
-    cursor: pointer;
+
+
+/*...................MEDIA-QUERIES.................*/ 
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+ .header-container{
+    align-items: center;
+ }
+
+ .main-nav  {
+    display: flex;
+    flex-direction: column;
+ }
 }
 
 
-@media (max-width: 768px) {
-    .main-nav {
-        display: none;
+@media (min-width: 576px) and (max-width: 767px) { 
+    .header-container{
+        align-items: center;
+     }
+    
+     .main-nav  {
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background-color: rgb(0, 0, 0);
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        z-index: 10;
-    }
+        
+     }
 
-    .main-nav.show {
-        display: flex; 
-    }
+     .main-nav a {
+        font-size: 14px;
+     }
+ }
 
-    .menu-btn {
-        display: block; 
-    }
-}
+
+ @media (max-width: 575px) { 
+    .header-container{
+        align-items: center;
+     }
+    
+     .main-nav  {
+        display: flex;
+        flex-direction: column;
+        
+     }
+
+     .main-nav li{
+        max-width: 170px;
+     }
+
+     .main-nav a {
+        font-size: 14px;
+     }
+  }

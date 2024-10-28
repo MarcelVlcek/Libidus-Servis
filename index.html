@@ -28,11 +28,10 @@
     <header id="top" >
         <div class="header-container">
             <h1 class="company-heading"> Libidus servis </h1>
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
             <ul class="main-nav">
-                <li><a href="#uvod" class="nav-link">Úvod</a></li>
-                <li><a href="#sluzby" class="nav-link">Služby a cenník</a></li>
-                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>  
+                <li><a href="#home" class="nav-link">Úvod</a></li>
+                <li><a href="#services" class="nav-link">Služby a cenník</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>  
             </ul>
         </div>
     </header>
@@ -40,7 +39,7 @@
 
 
     <main>
-        <div id="uvod" class="section about">
+        <div id="home" class="section about">
             <aside class="left">
                  <img src="/img/computercase.jpg" alt="background" class="bg-image" >               
             </aside>
@@ -55,7 +54,7 @@
                     </ul>
             </article>
         </div>
-        <div id="sluzby" class="section cards">
+        <div id="services" class="section cards">
             <h2>Služby a cenník</h2>
                 <div class="cards-container">
                 <div class="card">
@@ -108,7 +107,8 @@
             </div>
 
         </div>
-        <div id="kontakt" class="section">
+        <div id="contact" class="section">
+            <h2 class="contact-heading">Napíš mi</h2>
             <form class="contact-form"
                 action="https://formspree.io/f/xayrvdbv"
                 method="POST"
@@ -145,7 +145,7 @@
 
 
     <footer>
-        <div class="contact-info">
+        <section class="contact-info">
             <div class="phone"> 
                 <a href="tel:+421123456789">
                     <i class="fa-solid fa-phone"></i>+421 948384648 
@@ -161,7 +161,7 @@
             <div class="adress"><i class="fa-solid fa-location-dot"></i>
                 <p>Kováčska 17, 04425 Medzev</p>
             </div>
-        </div>
+        </section>
 
         <a href="#top" class="top-page">Hore</a>
 

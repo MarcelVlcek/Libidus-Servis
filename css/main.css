@@ -13,7 +13,7 @@
     font-size: 40px;
     text-align: center;
     color: #ffffff;
-    line-height: 70px;
+    line-height: 50px;
 }
 
 .left {
@@ -123,6 +123,13 @@
     margin: 20px;
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -133,7 +140,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -204,3 +211,63 @@
 .contact-form button:hover {
     background-color: rgb(137, 14, 92);
 }
+
+
+
+/*..............MEDIA-QUERIES--------*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .bg-image{
+        width: 450px;
+        height: 500px;
+    }
+    
+    .services-list li{
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    #home{
+        height: max-content;
+    }
+    
+    .right h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .services-list li{
+        font-size: 12px;
+}
+
+    .bg-image{
+        width: 350px;
+        height: 350px;
+    }
+}    
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .right h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .services-list li{
+        font-size: 12px;
+}
+
+    .bg-image{
+        width: 200px;
+        height: 300px;
+    }
+ }
+
+
+ @media (max-width: 575px) { 
+   .services-list{
+    display: flex;
+    flex-wrap: wrap;
+   }
+  }

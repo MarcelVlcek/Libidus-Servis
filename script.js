@@ -59,16 +59,3 @@ window.addEventListener("scroll", function () {
 
 
 
-function toggleMenu() {
-    let nav = document.querySelector('.main-nav ul');
-    nav.classList.toggle('show'); 
-}
-
-
-const menuButton = document.querySelector('.menu-btn');
-const mainNav = document.querySelector('.main-nav');
-
-
-menuButton.addEventListener('click', () => {
-    mainNav.classList.toggle('show'); 
-});
